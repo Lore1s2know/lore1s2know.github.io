@@ -80,9 +80,34 @@ h1 {
   margin-bottom: 40px;
 }
 
-.subtitle .back-link {
+.subtitle .back-link,
+.subtitle .back-link:link,
+.subtitle .back-link:any-link,
+.subtitle .back-link:visited,
+.subtitle .back-link:hover,
+.subtitle .back-link:active,
+.subtitle .back-link:focus,
+.subtitle .back-link:focus-visible {
   font-size: 1.1rem;
   font-weight: 500;
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--white);
+  -webkit-text-fill-color: var(--white);
+}
+
+.about-connect .back-link,
+.about-connect .back-link:link,
+.about-connect .back-link:any-link,
+.about-connect .back-link:visited,
+.about-connect .back-link:hover,
+.about-connect .back-link:active,
+.about-connect .back-link:focus,
+.about-connect .back-link:focus-visible {
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--white);
+  -webkit-text-fill-color: var(--white);
 }
 
 .container--about {
@@ -177,22 +202,52 @@ h1 {
   margin-top: 24px;
 }
 
-.back-link,
-a:not(.btn) {
+/* Back to Home — original style (only inside .back-nav) */
+.back-nav .back-link {
   color: var(--white);
   font-size: 0.85rem;
   font-weight: 400;
   text-decoration: underline;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
 }
 
-.back-link:hover,
-.back-link:active,
-.back-link:visited,
-.back-link:focus,
-a:not(.btn):hover,
-a:not(.btn):active,
-a:not(.btn):visited,
-a:not(.btn):focus {
+.back-nav .back-link:link,
+.back-nav .back-link:any-link,
+.back-nav .back-link:visited,
+.back-nav .back-link:active,
+.back-nav .back-link:focus,
+.back-nav .back-link:focus-visible {
+  color: var(--white);
+  -webkit-text-fill-color: var(--white);
+}
+
+.back-nav .back-link:hover {
+  opacity: 1;
+  color: var(--aqua-bright);
+  -webkit-text-fill-color: var(--aqua-bright);
+}
+
+/* Other text links — white, no browser default colors */
+a:not(.btn):not(.back-link),
+a:not(.btn):not(.back-link):link,
+a:not(.btn):not(.back-link):any-link,
+a:not(.btn):not(.back-link):visited,
+a:not(.btn):not(.back-link):hover,
+a:not(.btn):not(.back-link):active,
+a:not(.btn):not(.back-link):focus,
+a:not(.btn):not(.back-link):focus-visible {
+  color: var(--white);
+  text-decoration-color: var(--white);
+  -webkit-text-fill-color: var(--white);
+}
+
+.btn:link,
+.btn:visited,
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:focus-visible {
   color: var(--white);
 }
 
@@ -210,11 +265,16 @@ a:not(.btn):focus {
   opacity: 0.7;
 }
 
+.social-icons a,
+.social-icons a:link,
+.social-icons a:any-link,
+.social-icons a:visited,
 .social-icons a:hover,
 .social-icons a:active,
-.social-icons a:visited,
-.social-icons a:focus {
+.social-icons a:focus,
+.social-icons a:focus-visible {
   color: var(--white);
+  -webkit-text-fill-color: var(--white);
 }
 
 footer p {
