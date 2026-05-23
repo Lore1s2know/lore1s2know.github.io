@@ -198,6 +198,84 @@ h1 {
   transform: scale(0.98);
 }
 
+button.btn {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container--experience {
+  max-width: 560px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.experience-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.experience-toggle.is-active {
+  filter: brightness(1.1);
+  box-shadow: 0 20px 50px rgba(0, 210, 190, 0.5);
+}
+
+.experience-dates {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.experience-panel {
+  width: min(100%, 320px);
+  text-align: left;
+  margin-top: 14px;
+}
+
+.experience-employer {
+  font-size: 0.9rem;
+  color: var(--aqua-bright);
+  font-weight: 500;
+  margin: 0 0 0.75rem;
+}
+
+.experience-panel ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.65;
+  opacity: 0.92;
+}
+
+.experience-panel li {
+  margin-bottom: 0.6rem;
+}
+
+.experience-panel li:last-child {
+  margin-bottom: 0;
+}
+
+.experience-panel strong {
+  color: var(--white);
+  font-weight: 700;
+}
+
 .back-nav {
   margin-top: 24px;
 }
