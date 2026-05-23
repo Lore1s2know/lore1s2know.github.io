@@ -1,66 +1,59 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Information | Lorena Arroyo Perez</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <main class="container">
-      <header class="profile-section">
-        <h1>Contact Information</h1>
-        <p class="subtitle">Get in touch</p>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Information | Lorena Arroyo Perez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
 
-      <section
-        id="contact"
-        class="links-section"
-        aria-label="Contact information"
-      >
-        <a href="mailto:lorerivers399@gmail.com" class="btn">Email</a>
-        <a
-          href="https://www.linkedin.com/in/lorena-arroyo-p"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn"
-          >LinkedIn</a
-        >
-        <a href="tel:+13434634213" class="btn">Phone</a>
-      </section>
+<body>
+  <main class="container">
+    <header class="profile-section">
+      <h1>Contact Information</h1>
+      <p class="subtitle">Get in touch</p>
+    </header>
 
-      <nav class="back-nav" aria-label="Page navigation">
-        <a href="index.html" class="back-link">Back to Home</a>
-      </nav>
+    <section id="contact" class="links-section" aria-label="Contact information">
+      <article class="flip-card">
+        <button type="button" class="flip-card__trigger" aria-expanded="false"
+          aria-label="Email, click to reveal address">
+          <span class="flip-card__inner">
+            <span class="flip-card__face flip-card__front">Email</span>
+            <span class="flip-card__face flip-card__back">
+              <a href="mailto:lorerivers399@gmail.com" class="flip-card__email">lorerivers399@gmail.com</a>
+            </span>
+          </span>
+        </button>
+      </article>
+      <a href="https://www.linkedin.com/in/lorena-arroyo-p" target="_blank" rel="noopener noreferrer"
+        class="btn">LinkedIn</a>
+      <a href="tel:+13434634213" class="btn">Phone</a>
+    </section>
 
-      <footer class="social-footer">
-        <div class="social-icons">
-          <a
-            href="https://www.linkedin.com/in/lorena-arroyo-p"
-            target="_blank"
-            aria-label="LinkedIn"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/lore1s2know.github.io"
-            target="_blank"
-            aria-label="GitHub"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div>
-        <p>&copy; 2026 Lorena Arroyo Perez</p>
-      </footer>
-    </main>
-  </body>
+    <nav class="back-nav" aria-label="Page navigation">
+      <a href="index.html" class="back-link">Back to Home</a>
+    </nav>
+
+    <footer class="social-footer">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/lorena-arroyo-p" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/lore1s2know.github.io" target="_blank" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+      </div>
+      <p>&copy; 2026 Lorena Arroyo Perez</p>
+    </footer>
+  </main>
+
+  <script src="contactinformation.js"></script>
+</body>
+
 </html>
