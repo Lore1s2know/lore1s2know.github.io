@@ -80,17 +80,9 @@ h1 {
   margin-bottom: 40px;
 }
 
-.subtitle-link {
-  color: inherit;
-  font-weight: inherit;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.2s ease, opacity 0.2s ease;
-}
-
-.subtitle-link:hover {
-  color: var(--white);
-  opacity: 0.95;
+.subtitle .back-link {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .container--about {
@@ -121,16 +113,6 @@ h1 {
   border: none;
   border-top: 1px solid rgba(0, 210, 190, 0.35);
   margin: 2rem 0;
-}
-
-.about-content a {
-  color: var(--aqua-bright);
-  transition: opacity 0.2s ease;
-}
-
-.about-content a:hover {
-  opacity: 0.85;
-  color: var(--white);
 }
 
 .about-content strong {
@@ -195,18 +177,23 @@ h1 {
   margin-top: 24px;
 }
 
-.back-link {
+.back-link,
+a:not(.btn) {
   color: var(--white);
   font-size: 0.85rem;
   font-weight: 400;
   text-decoration: underline;
-  opacity: 0.85;
-  transition: opacity 0.2s ease;
 }
 
-.back-link:hover {
-  opacity: 1;
-  color: var(--aqua-bright);
+.back-link:hover,
+.back-link:active,
+.back-link:visited,
+.back-link:focus,
+a:not(.btn):hover,
+a:not(.btn):active,
+a:not(.btn):visited,
+a:not(.btn):focus {
+  color: var(--white);
 }
 
 /* Social Icons */
@@ -218,16 +205,16 @@ h1 {
 }
 
 .social-icons a {
-  color: var(--white);
   font-size: 1.8rem;
+  text-decoration: none;
   opacity: 0.7;
-  transition: all 0.3s ease;
 }
 
-.social-icons a:hover {
-  color: var(--aqua-bright);
-  opacity: 1;
-  transform: translateY(-3px);
+.social-icons a:hover,
+.social-icons a:active,
+.social-icons a:visited,
+.social-icons a:focus {
+  color: var(--white);
 }
 
 footer p {
