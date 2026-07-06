@@ -159,6 +159,65 @@ h1 {
   text-align: center;
 }
 
+.container--project {
+  max-width: 720px;
+}
+
+.project-story {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-step {
+  margin: 0;
+  text-align: left;
+}
+
+.project-step figcaption {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.7;
+  opacity: 0.92;
+  margin-bottom: 1rem;
+}
+
+.project-step__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--aqua-bright);
+  color: var(--aqua-deep);
+  font-size: 0.85rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.project-step strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.project-step img {
+  display: block;
+  width: 100%;
+  margin-top: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 210, 190, 0.25);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.project-step img + img {
+  margin-top: 1rem;
+}
+
 /* Buttons: Defaulting to your "Amplified" style */
 .links-section {
   display: flex;

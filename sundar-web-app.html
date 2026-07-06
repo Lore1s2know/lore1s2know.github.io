@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sundar Web App | Lorena Arroyo Perez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="container container--about container--project">
+    <article id="sundar-web-app" class="about-content">
+      <h1>Sundar Web App</h1>
+
+      <p>
+        Sundar is a data-driven web application that functions as a community forum
+        where users can create an account and share posts about skincare products or
+        eye makeup products. Built with a relational database backend, the app tracks
+        reviews, categories, and community upvotes so members can discover honest
+        product feedback from real users.
+      </p>
+
+      <p class="about-connect">
+        <strong>View the source code:</strong><br />
+        <a href="https://github.com/Lore1s2know/Capstone-Project-Sundar-Web-App.git" class="back-link"
+          target="_blank" rel="noopener noreferrer">Capstone-Project-Sundar-Web-App on GitHub</a>
+      </p>
+
+      <hr />
+
+      <h2>How the App Works</h2>
+      <p>
+        The walkthrough below follows a typical user journey—from signing in to
+        publishing a review and browsing community posts filtered by category.
+      </p>
+
+      <section class="project-story" aria-label="Sundar Web App walkthrough">
+        <figure class="project-step">
+          <figcaption>
+            <span class="project-step__number">1</span>
+            <strong>Sign in or create an account</strong>
+            New and returning users authenticate through a secure login page. The
+            sign-up flow lets members register before they can post or upvote reviews.
+          </figcaption>
+          <img src="img/sundar_screenshots/sundar_loginpage.jpg"
+            alt="Sundar login page with email, password, and sign-up link" loading="lazy" />
+          <img src="img/sundar_screenshots/alice_login.jpg"
+            alt="Login form filled in for user Alice before signing in" loading="lazy" />
+        </figure>
+
+        <figure class="project-step">
+          <figcaption>
+            <span class="project-step__number">2</span>
+            <strong>Track your reviews on the dashboard</strong>
+            After authentication, users land on a personal dashboard that summarizes
+            their activity—total reviews, upvotes, and downvotes—and lists the posts
+            they have authored, with filters for Skincare and Eye Makeup.
+          </figcaption>
+          <img src="img/sundar_screenshots/sundar_dashboard.jpg"
+            alt="Sundar dashboard showing review stats and My Reviews section" loading="lazy" />
+        </figure>
+
+        <figure class="project-step">
+          <figcaption>
+            <span class="project-step__number">3</span>
+            <strong>Write and submit a review</strong>
+            From the dashboard, users open the review form to name a product, choose
+            a category (Skincare or Eye Makeup), and share their experience. Submitted
+            posts are stored in the database and appear on the community feed.
+          </figcaption>
+          <img src="img/sundar_screenshots/newReview.jpg"
+            alt="Write a Review form with product name, category, and review fields" loading="lazy" />
+        </figure>
+
+        <figure class="project-step">
+          <figcaption>
+            <span class="project-step__number">4</span>
+            <strong>Browse community reviews</strong>
+            The Community Reviews page aggregates posts from all members. Users can
+            sort by newest or oldest, filter by Skincare or Eye Makeup, and upvote
+            helpful reviews—limited to one vote per post to keep metrics accurate.
+          </figcaption>
+          <img src="img/sundar_screenshots/sundar_communityreviews.jpg"
+            alt="Community Reviews page showing skincare product posts" loading="lazy" />
+          <img src="img/sundar_screenshots/communityReviews_eyeMakeup.jpg"
+            alt="Community Reviews filtered to Eye Makeup category" loading="lazy" />
+        </figure>
+      </section>
+
+      <hr />
+
+      <h2>Development Highlights</h2>
+      <p>
+        Sundar was developed as a capstone project using Laravel, Livewire, and
+        Tailwind CSS, with a relational database modeling users, posts, categories,
+        and upvotes. The one-vote-per-post rule is enforced at the data layer to
+        protect community metrics, and category filters keep skincare and eye makeup
+        discussions easy to navigate.
+      </p>
+    </article>
+
+    <nav class="back-nav" aria-label="Page navigation">
+      <a href="projects.html" class="back-link">Back to Web Projects</a>
+    </nav>
+
+    <footer class="social-footer">
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/lore1s2know.github.io" target="_blank" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+      </div>
+      <p>&copy; 2026 Lorena Arroyo Perez</p>
+    </footer>
+  </main>
+</body>
+
+</html>
