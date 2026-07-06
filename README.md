@@ -2,7 +2,7 @@
 
 Welcome to my GitHub Pages portfolio.   
 
-I am a **Global Graduate from Algonquin College** with an academic focus in **Web Design and Interactive Media (WDIA)**. 
+I am a **Global Graduate from Algonquin College** with an academic focus in **Web Development and Internet Applications (WDIA)**. 
 
  
 
