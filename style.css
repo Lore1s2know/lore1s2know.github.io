@@ -372,6 +372,12 @@ button.btn {
   background: transparent;
   cursor: pointer;
   font-family: inherit;
+  outline: none;
+}
+
+.flip-card__trigger:focus-visible .flip-card__face {
+  outline: 2px solid var(--white);
+  outline-offset: 2px;
 }
 
 .flip-card__inner {

@@ -10,6 +10,14 @@
     trigger.setAttribute("aria-expanded", String(flipped));
   });
 
+  trigger.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      const flipped = card.classList.toggle("is-flipped");
+      trigger.setAttribute("aria-expanded", String(flipped));
+    }
+  });
+
   if (emailLink) {
     emailLink.addEventListener("click", (event) => {
       event.stopPropagation();
